@@ -261,7 +261,7 @@ def seg_track_app():
         gr.Markdown(
             '''
             <div style="text-align:center;">
-                <span style="font-size:3em; font-weight:bold;">Segment and Track Anything(SAM-Track)</span>
+                <span style="font-size:3em; font-weight:bold;">MIL TrackSpectre 1.0</span>
             </div>
             '''
         )
