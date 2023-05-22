@@ -161,7 +161,7 @@ def video_type_input_tracking(SegTracker, input_video, io_args, video_name):
     height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     num_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 
-    fourcc =  cv2.VideoWriter_fourcc(*"mp4v")
+    #fourcc =  cv2.VideoWriter_fourcc(*"mp4v")
     # if input_video[-3:]=='mp4':
     #     fourcc =  cv2.VideoWriter_fourcc(*"mp4v")
     # elif input_video[-3:] == 'avi':
@@ -169,6 +169,7 @@ def video_type_input_tracking(SegTracker, input_video, io_args, video_name):
     #     # fourcc = cv2.VideoWriter_fourcc(*"XVID")
     # else:
     #     fourcc = int(cap.get(cv2.CAP_PROP_FOURCC))
+    fourcc = int(cap.get(cv2.CAP_PROP_FOURCC))
     out = cv2.VideoWriter(io_args['output_video'], fourcc, fps, (width, height))
 
     frame_idx = 0
