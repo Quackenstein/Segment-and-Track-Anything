@@ -775,7 +775,7 @@ def seg_track_app():
             )
     
     app.queue(concurrency_count=1)
-    app.launch(debug=True, enable_queue=True, share=True)
+    app.launch(debug=True, enable_queue=True, share=False)
 
 
 if __name__ == "__main__":
